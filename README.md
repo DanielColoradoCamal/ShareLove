@@ -12,7 +12,6 @@ Este proyecto es elaborado por:
 
 - Luis Daniel Colorado Camal: daniel.colorado.940426@gmail.com
 
-- José J. Calderón C: josechee.unp@gmail.com
 
 ## Cuenta de Acceso a la App
 
