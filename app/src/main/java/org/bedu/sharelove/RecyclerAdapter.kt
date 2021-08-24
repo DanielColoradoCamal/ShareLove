@@ -29,6 +29,8 @@ class RecyclerAdapter(
         return ViewHolder(layoutInflater.inflate(R.layout.item_ver_mas, parent, false))
     }
 
+  
+
     override fun getItemCount(): Int {
         return products.size
     }

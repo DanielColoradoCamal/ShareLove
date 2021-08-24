@@ -7,21 +7,20 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-
         android:supportsRtl="true"
         android:theme="@style/Theme.ShareLove">
+        <activity android:name=".AgregarProducto"></activity>
         <activity
             android:name=".NavigatDrawer"
-            android:screenOrientation="locked"
             android:exported="true"
             android:label="@string/title_activity_navigat_drawer"
-
+            android:screenOrientation="locked"
             android:theme="@style/Theme.ShareLove.NoActionBar" />
         <activity
             android:name=".Perfil"
-            android:screenOrientation="locked"
             android:exported="true"
             android:label="@string/title_activity_perfil"
+            android:screenOrientation="locked"
             android:theme="@style/Theme.ShareLove.NoActionBar" />
         <activity
             android:name=".Seleccionar"
@@ -39,13 +38,17 @@
             android:name=".Articulos"
             android:screenOrientation="locked"
             android:theme="@style/Theme.ShareLove2" />
-        <activity android:name=".RecuperarContrasena"
-            android:screenOrientation="locked"/>
-        <activity android:name=".VistaPrincipal"
-            android:screenOrientation="locked"/>
-        <activity android:name=".CrearCuenta"
-            android:screenOrientation="locked"/>
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".RecuperarContrasena"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".VistaPrincipal"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".CrearCuenta"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="locked">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

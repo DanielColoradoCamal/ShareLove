@@ -10,10 +10,11 @@
     tools:openDrawer="start"
     android:fitsSystemWindows="true">
 
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
         <com.google.android.material.appbar.AppBarLayout
@@ -21,13 +22,14 @@
             android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.Toolbar
-                app:navigationIcon="@drawable/menu"
                 android:id="@+id/app_bar"
                 style="@style/Widget.Toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
+                app:navigationIcon="@drawable/menu"
                 app:title="@string/app_name" />
         </com.google.android.material.appbar.AppBarLayout>
+
 
         <com.google.android.material.tabs.TabLayout
             android:layout_width="match_parent"
@@ -49,20 +51,31 @@
                 android:text="Articulos" />
 
         </com.google.android.material.tabs.TabLayout>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerProducts"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
+
     </LinearLayout>
 
 
-
     <com.google.android.material.navigation.NavigationView
-        app:headerLayout="@layout/drawer_header"
         android:id="@+id/nav_view"
-        android:layout_gravity="start"
-        android:layout_height="match_parent"
         android:layout_width="wrap_content"
-        app:menu="@menu/drawer_menu" />
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_menu" >
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/Fab"
+        android:name="org.bedu.sharelove.BottonFab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
 </androidx.drawerlayout.widget.DrawerLayout>
